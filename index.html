@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@300;400;500&family=Amatic+SC:wght@400;700&family=Inter:wght@200;300;400;500&family=Marcellus&family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,500;1,300;1,400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Scribble&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+
+    <div class="loading  ">
+      <span class="loader"></span>
+    </div>
+
+    <div class="background">
+      
+      <div id="sidebar" class="d-flex">
+        <div id="sideContainer">
+          <div class="links ">
+            <ul>
+              <li><a href="#" id="searchLink">Search</a></li>
+              <li><a href="#" id="categoriesLink">Ctegories</a></li>
+              <li><a href="#" id="areaLink">Area</a></li>
+              <li><a href="#" id="ingredientsLink">Ingreadients</a></li>
+              <li><a href="#" id="contactLink">Contact</a></li>
+            </ul>
+          </div>
+          <div class="test">
+            <div class="d-flex justify-content-center">
+              <a href="#"><i class="fa-brands fa-facebook m-1"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter m-1"></i></a>
+              <a href="#"><i class="fa-solid fa-globe m-1"></i></a>
+            </div>
+            <div class="barFooter text-center">
+              <p>Copyright Â © 2019 All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div id="outerBar" class=" d-flex flex-column justify-content-between">
+          <div class="logoContainer text-center">
+            <img src="Images/yummy.png" alt="">
+          </div>
+          <div class="toggleButtonContainer text-center">
+            <i class="fa fa-bars fa-3x" aria-hidden="true" id="toggleButton"></i>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center lowerLogosContainer">
+            <i class="fa-solid fa-globe m-2 "></i>
+            <i class="fa-solid fa-share-nodes m-2"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="container w-90 imgsContainer" id="parentConainer">
+        <div class="row searchContainer d-none" id="searchingContainer">
+          <div class="col-md-6">
+            <input type="text"  placeholder="Search By Name" id="sByName" maxlength="1">
+          </div>
+          <div class="col-md-6">
+            <input type="text"   placeholder="Search By First Letter" id="sByLetter" maxlength="1">
+          </div>
+      </div>
+      <div class="contactFormContainer d-none" id="contactContainer">
+        <div class="row">
+          <div class="col-md-6 ">
+            <input type="text" class="form-control" id="nameInput" placeholder="Enter Your Name">
+            <!-- <div "> -->
+              <div class="warningMsg text-center d-none" id="nameWarning">Special characters and numbers not allowed</div>
+            </div>
+          <!-- </div> -->
+          <div class="col-md-6 ">
+            <input type="text" class="form-control" id="emailInput" placeholder="Enter Your Email">
+            <div class="warningMsg text-center d-none" id="emailWarning">Email is not valid e.g: exemple@yyy.zzz</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ">
+            <input type="text" class="form-control" id="phoneInput" placeholder="Enter Your Phone">
+            <div class="warningMsg text-center d-none" id="phoneWarning">Enter a valid Phone Number</div>
+          </div>
+          <div class="col-md-6 ">
+            <input type="number" class="form-control" id="ageInput" placeholder="Enter Your Age">
+            <div class="warningMsg text-center d-none" id="ageWarning">Enter a valid age</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ">
+            <input type="password" class="form-control" id="passInput" placeholder="Enter Your Password">
+            <div class="warningMsg text-center d-none" id="passWarning">Password must contain be Minimum eight characters, at least one uppercase letter, one lowercase letter and one number!!</div>
+          </div>
+          <div class="col-md-6 ">
+            <input type="password" class="form-control" id="rePassInput" placeholder="Re-enter Your Password">
+            <div class="warningMsg text-center d-none" id="rePassWarning">Pssword does not match!!</div>
+          </div>
+        </div>
+        <div class="text-center formButtonContainer">
+          <button type="submit" class="btn btn-primary" disabled id="subBtn">Sign in</button>
+        </div>
+      </div>
+        <div class="row " id="displayRow">
+          
+          
+          
+        <!-- <div class="col-md-4">
+          <div class="imgContentContainer text-center">
+            <div class="recipeImgContainer">
+              <img src="Images/kitchen.png">
+            </div>
+            <div><h1>Name</h1></div>
+          </div>
+        </div>
+        <div class="col-md-8">
+         <div class="recipecontentContainer">
+          <div class="row">
+            <h2>Instructions</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque doloribus placeat tempore ratione nisi, accusantium pariatur molestiae quaerat voluptatum, sapiente nam consequatur velit non saepe asperiores corrupti maiores voluptas! Nihil illo expedita dignissimos facere asperiores beatae, rem temporibus, minus fugit ipsa ipsam earum nisi odio. Quas, quod? Cumque maxime esse eos facere, at error ea soluta! Dolorum velit laudantium molestiae ratione iste. Incidunt quaerat at alias dolore deserunt repudiandae maxime facere repellendus repellat cumque harum ea ad enim illo corrupti ipsa, iste omnis expedita obcaecati non optio. Perferendis id consequatur ut eaque beatae aliquam dicta quaerat, velit ab sequi.</p>
+              </div>
+          <div class="row">
+            <h2>Area : <span>Turkish</span></h2>
+            <h2>Category : <span>Side</span></h2>
+          </div>
+          <div class="row">
+            <h2>Recipes</h2>
+            <div class="">
+              <ul>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row tagsContainer">
+            <h1>Tags</h1>
+            <div class="d-flex"><p id="p1">test</p></div>
+            <div class="d-flex justify-content-center ">
+              <p id="p2">test</p>
+              <p id="p3">test</p>
+            </div>
+          </div>
+         </div>
+        </div> -->
+        </div>
+        
+      </div> 
+      
+    </div>
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
