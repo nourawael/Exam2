@@ -1,8 +1,8 @@
 /// <reference types="../@types/jquery" />
 
 $(function(){
-    $('.loader').fadeOut(1000, function(){
-        $('.loading').slideUp(1000,function(){
+    $('.loader').fadeOut(3000, function(){
+        $('.loading').slideUp(3000,function(){
             $('body').css('overflow','auto');
         });
     });
@@ -799,9 +799,10 @@ async function filterByIngredient(mainIngredient) {
  });
 
 $('#contactLink').on('click',function(){
+ 
     $('#searchingContainer').addClass('d-none');
     $('#contactContainer').removeClass('d-none');
-    // $('#displayRow').html('');
+    $('#displayRow').html('');
     $('#nameInput').val('');
     $('#emailInput').val('');
     $('#phoneInput').val('');
