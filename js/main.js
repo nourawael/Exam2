@@ -96,11 +96,12 @@ async function displayRecipe(name) {
       tagsStr += `
         <li >${tags[i]}</li>`;
     }
-    for (let i = 1; i < finalRespone.meals.length; i++) {
+    for (let i = 1; i < 20; i++) {
       if (
         finalRespone.meals[0][`strIngredient${i}`].trim().length !== 0 ||
         finalRespone.meals[0][`strIngredient${i}`] === null
       ) {
+        console.log(ingredients);
         // ingredientsArray.push(finalRespone.meals[0][`strIngredient${i}`]);
         ingredients += `
                 <li >${finalRespone.meals[0][`strIngredient${i}`]}</li>
