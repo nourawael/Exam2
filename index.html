@@ -19,16 +19,14 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-
-    <div class="loading  ">
+    <div class="loading">
       <span class="loader"></span>
     </div>
 
     <div class="background">
-      
       <div id="sidebar" class="d-flex">
         <div id="sideContainer">
-          <div class="links ">
+          <div class="links">
             <ul>
               <li><a href="#" id="searchLink">Search</a></li>
               <li><a href="#" id="categoriesLink">Ctegories</a></li>
@@ -48,16 +46,22 @@
             </div>
           </div>
         </div>
-        
-        <div id="outerBar" class=" d-flex flex-column justify-content-between">
+
+        <div id="outerBar" class="d-flex flex-column justify-content-between">
           <div class="logoContainer text-center">
-            <img src="Images/yummy.png" alt="">
+            <img src="Images/yummy.png" alt="" />
           </div>
           <div class="toggleButtonContainer text-center">
-            <i class="fa fa-bars fa-3x" aria-hidden="true" id="toggleButton"></i>
+            <i
+              class="fa fa-bars fa-3x"
+              aria-hidden="true"
+              id="toggleButton"
+            ></i>
           </div>
-          <div class="d-flex flex-column justify-content-center align-items-center lowerLogosContainer">
-            <i class="fa-solid fa-globe m-2 "></i>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center lowerLogosContainer"
+          >
+            <i class="fa-solid fa-globe m-2"></i>
             <i class="fa-solid fa-share-nodes m-2"></i>
           </div>
         </div>
@@ -66,54 +70,101 @@
       <div class="container w-90 imgsContainer" id="parentConainer">
         <div class="row searchContainer d-none" id="searchingContainer">
           <div class="col-md-6">
-            <input type="text"  placeholder="Search By Name" id="sByName" maxlength="1">
+            <input type="text" placeholder="Search By Name" id="sByName" />
           </div>
           <div class="col-md-6">
-            <input type="text"   placeholder="Search By First Letter" id="sByLetter" maxlength="1">
+            <input
+              type="text"
+              placeholder="Search By First Letter"
+              id="sByLetter"
+              maxlength="1"
+            />
           </div>
-      </div>
-      <div class="contactFormContainer d-none" id="contactContainer">
-        <div class="row">
-          <div class="col-md-6 ">
-            <input type="text" class="form-control" id="nameInput" placeholder="Enter Your Name">
-            <!-- <div "> -->
-              <div class="warningMsg text-center d-none" id="nameWarning">Special characters and numbers not allowed</div>
+        </div>
+        <div class="contactFormContainer d-none" id="contactContainer">
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="nameInput"
+                placeholder="Enter Your Name"
+              />
+              <!-- <div "> -->
+              <div class="warningMsg text-center d-none" id="nameWarning">
+                Special characters and numbers not allowed
+              </div>
             </div>
-          <!-- </div> -->
-          <div class="col-md-6 ">
-            <input type="text" class="form-control" id="emailInput" placeholder="Enter Your Email">
-            <div class="warningMsg text-center d-none" id="emailWarning">Email is not valid e.g: exemple@yyy.zzz</div>
+            <!-- </div> -->
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="emailInput"
+                placeholder="Enter Your Email"
+              />
+              <div class="warningMsg text-center d-none" id="emailWarning">
+                Email is not valid e.g: exemple@yyy.zzz
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="phoneInput"
+                placeholder="Enter Your Phone"
+              />
+              <div class="warningMsg text-center d-none" id="phoneWarning">
+                Enter a valid Phone Number
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="number"
+                class="form-control"
+                id="ageInput"
+                placeholder="Enter Your Age"
+              />
+              <div class="warningMsg text-center d-none" id="ageWarning">
+                Enter a valid age
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                type="password"
+                class="form-control"
+                id="passInput"
+                placeholder="Enter Your Password"
+              />
+              <div class="warningMsg text-center d-none" id="passWarning">
+                Password must contain be Minimum eight characters, at least one
+                uppercase letter, one lowercase letter and one number!!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="password"
+                class="form-control"
+                id="rePassInput"
+                placeholder="Re-enter Your Password"
+              />
+              <div class="warningMsg text-center d-none" id="rePassWarning">
+                Pssword does not match!!
+              </div>
+            </div>
+          </div>
+          <div class="text-center formButtonContainer">
+            <button type="submit" class="btn btn-primary" disabled id="subBtn">
+              Sign in
+            </button>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 ">
-            <input type="text" class="form-control" id="phoneInput" placeholder="Enter Your Phone">
-            <div class="warningMsg text-center d-none" id="phoneWarning">Enter a valid Phone Number</div>
-          </div>
-          <div class="col-md-6 ">
-            <input type="number" class="form-control" id="ageInput" placeholder="Enter Your Age">
-            <div class="warningMsg text-center d-none" id="ageWarning">Enter a valid age</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 ">
-            <input type="password" class="form-control" id="passInput" placeholder="Enter Your Password">
-            <div class="warningMsg text-center d-none" id="passWarning">Password must contain be Minimum eight characters, at least one uppercase letter, one lowercase letter and one number!!</div>
-          </div>
-          <div class="col-md-6 ">
-            <input type="password" class="form-control" id="rePassInput" placeholder="Re-enter Your Password">
-            <div class="warningMsg text-center d-none" id="rePassWarning">Pssword does not match!!</div>
-          </div>
-        </div>
-        <div class="text-center formButtonContainer">
-          <button type="submit" class="btn btn-primary" disabled id="subBtn">Sign in</button>
-        </div>
-      </div>
-        <div class="row " id="displayRow">
-          
-          
-          
-        <!-- <div class="col-md-4">
+        <div class="row" id="displayRow">
+          <!-- <div class="col-md-4">
           <div class="imgContentContainer text-center">
             <div class="recipeImgContainer">
               <img src="Images/kitchen.png">
@@ -164,11 +215,8 @@
          </div>
         </div> -->
         </div>
-        
-      </div> 
-      
+      </div>
     </div>
-    
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
